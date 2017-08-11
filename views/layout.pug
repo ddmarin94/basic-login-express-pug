@@ -7,11 +7,5 @@ html(lang='en')
     link(rel='stylesheet', href='/css/styles.css')
 
   body
-    div.form-position
-      form(action="/log" method="Post")
-          h3 Log In
-          input(type="mail" placeholder=" Mail"  name="mail" value="" autofocus)
-          input(type="password" placeholder=" Password" value="" name="password")
-          button submit
-      
-    script(src='js/main.js')
+    block content
+    
