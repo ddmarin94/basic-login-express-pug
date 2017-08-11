@@ -6,4 +6,12 @@ html(lang='en')
     link(rel='stylesheet', href='/css/styles.css')
 
   body
-      p NO ES VALIDO EL USUARIO O CONTRASEÑA
+    div.form-position
+      form(action="/registering" method="Post")
+          h3 Register
+          input(type="text" placeholder=" First Name"  name="first-name" autofocus)
+          input(type="text" placeholder=" Last Name"  name="last-name")
+          input(type="tel" placeholder=" Phone"  name="tel")
+          input(type="mail" placeholder=" Mail"  value="david@gmail.com" name="registerMail"  required)
+          input(type="password" placeholder=" Password" value="1234" name="registerPass" required)
+          button submit
